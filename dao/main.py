@@ -1,6 +1,6 @@
 import sys
 
-from .lexer import Lexer
+from dao.lexer import Lexer
 
 
 def main():
