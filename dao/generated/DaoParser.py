@@ -1,4 +1,4 @@
-# Generated from DaoParser.g4 by ANTLR 4.9.3
+# Generated from DaoParser.g4 by ANTLR 4.11.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,153 +8,121 @@ if sys.version_info[1] > 5:
 else:
 	from typing.io import TextIO
 
-
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3X")
-        buf.write("\u0139\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
-        buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
-        buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
-        buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
-        buf.write("\3\2\7\2>\n\2\f\2\16\2A\13\2\3\2\3\2\3\3\5\3F\n\3\3\3")
-        buf.write("\3\3\5\3J\n\3\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\5\5T\n\5")
-        buf.write("\3\5\3\5\3\5\3\5\3\5\5\5[\n\5\7\5]\n\5\f\5\16\5`\13\5")
-        buf.write("\3\6\3\6\3\7\3\7\3\7\3\7\3\7\5\7i\n\7\3\b\3\b\3\t\3\t")
-        buf.write("\3\t\3\t\3\t\3\t\5\ts\n\t\3\n\3\n\3\n\3\n\3\n\3\n\7\n")
-        buf.write("{\n\n\f\n\16\n~\13\n\3\13\3\13\3\13\3\13\3\13\3\13\7\13")
-        buf.write("\u0086\n\13\f\13\16\13\u0089\13\13\3\f\3\f\3\f\3\f\3\f")
-        buf.write("\3\f\7\f\u0091\n\f\f\f\16\f\u0094\13\f\3\r\3\r\3\r\7\r")
-        buf.write("\u0099\n\r\f\r\16\r\u009c\13\r\3\16\3\16\3\16\3\16\3\16")
-        buf.write("\3\16\7\16\u00a4\n\16\f\16\16\16\u00a7\13\16\3\17\3\17")
-        buf.write("\3\17\3\17\7\17\u00ad\n\17\f\17\16\17\u00b0\13\17\3\20")
-        buf.write("\3\20\3\21\3\21\3\21\3\21\3\21\3\21\7\21\u00ba\n\21\f")
-        buf.write("\21\16\21\u00bd\13\21\3\22\3\22\3\22\3\22\3\22\3\22\7")
-        buf.write("\22\u00c5\n\22\f\22\16\22\u00c8\13\22\3\23\3\23\3\23\3")
-        buf.write("\23\3\23\3\23\7\23\u00d0\n\23\f\23\16\23\u00d3\13\23\3")
-        buf.write("\24\3\24\3\24\3\24\3\24\3\24\5\24\u00db\n\24\3\25\7\25")
-        buf.write("\u00de\n\25\f\25\16\25\u00e1\13\25\3\25\3\25\3\25\3\25")
-        buf.write("\5\25\u00e7\n\25\3\26\3\26\3\27\3\27\3\27\3\27\3\27\3")
-        buf.write("\27\3\27\3\27\3\27\3\27\5\27\u00f5\n\27\3\27\3\27\3\27")
-        buf.write("\3\27\5\27\u00fb\n\27\7\27\u00fd\n\27\f\27\16\27\u0100")
-        buf.write("\13\27\3\30\3\30\3\30\3\30\3\30\3\30\3\30\3\30\3\30\3")
-        buf.write("\30\3\30\5\30\u010d\n\30\3\31\3\31\3\32\3\32\3\32\7\32")
-        buf.write("\u0114\n\32\f\32\16\32\u0117\13\32\3\33\3\33\3\34\3\34")
-        buf.write("\3\34\7\34\u011e\n\34\f\34\16\34\u0121\13\34\3\35\3\35")
-        buf.write("\3\35\3\35\3\35\3\35\3\35\3\35\3\35\3\35\3\35\3\35\3\35")
-        buf.write("\5\35\u0130\n\35\3\36\3\36\3\36\5\36\u0135\n\36\3\36\3")
-        buf.write("\36\3\36\2\13\b\22\24\26\32 \"$,\37\2\4\6\b\n\f\16\20")
-        buf.write("\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:\2\n\3\2A")
-        buf.write("K\4\2(+LM\3\2,-\4\2..\60\60\3\2\62\64\4\2//\61\61\7\2")
-        buf.write("..\60\60\62\62\65\65:;\3\2NO\2\u014a\2?\3\2\2\2\4I\3\2")
-        buf.write("\2\2\6K\3\2\2\2\bN\3\2\2\2\na\3\2\2\2\fh\3\2\2\2\16j\3")
-        buf.write("\2\2\2\20l\3\2\2\2\22t\3\2\2\2\24\177\3\2\2\2\26\u008a")
-        buf.write("\3\2\2\2\30\u0095\3\2\2\2\32\u009d\3\2\2\2\34\u00a8\3")
-        buf.write("\2\2\2\36\u00b1\3\2\2\2 \u00b3\3\2\2\2\"\u00be\3\2\2\2")
-        buf.write("$\u00c9\3\2\2\2&\u00da\3\2\2\2(\u00df\3\2\2\2*\u00e8\3")
-        buf.write("\2\2\2,\u00ea\3\2\2\2.\u010c\3\2\2\2\60\u010e\3\2\2\2")
-        buf.write("\62\u0110\3\2\2\2\64\u0118\3\2\2\2\66\u011a\3\2\2\28\u012f")
-        buf.write("\3\2\2\2:\u0134\3\2\2\2<>\5\4\3\2=<\3\2\2\2>A\3\2\2\2")
-        buf.write("?=\3\2\2\2?@\3\2\2\2@B\3\2\2\2A?\3\2\2\2BC\7\2\2\3C\3")
-        buf.write("\3\2\2\2DF\5\n\6\2ED\3\2\2\2EF\3\2\2\2FG\3\2\2\2GJ\7R")
-        buf.write("\2\2HJ\5\6\4\2IE\3\2\2\2IH\3\2\2\2J\5\3\2\2\2KL\5\b\5")
-        buf.write("\2LM\7R\2\2M\7\3\2\2\2NO\b\5\1\2OP\58\35\2PS\5\64\33\2")
-        buf.write("QR\7A\2\2RT\5\n\6\2SQ\3\2\2\2ST\3\2\2\2T^\3\2\2\2UV\f")
-        buf.write("\3\2\2VW\7@\2\2WZ\5\64\33\2XY\7A\2\2Y[\5\n\6\2ZX\3\2\2")
-        buf.write("\2Z[\3\2\2\2[]\3\2\2\2\\U\3\2\2\2]`\3\2\2\2^\\\3\2\2\2")
-        buf.write("^_\3\2\2\2_\t\3\2\2\2`^\3\2\2\2ab\5\f\7\2b\13\3\2\2\2")
-        buf.write("ci\5\20\t\2de\5(\25\2ef\5\16\b\2fg\5\f\7\2gi\3\2\2\2h")
-        buf.write("c\3\2\2\2hd\3\2\2\2i\r\3\2\2\2jk\t\2\2\2k\17\3\2\2\2l")
-        buf.write("r\5\22\n\2mn\7<\2\2no\5\n\6\2op\7=\2\2pq\5\20\t\2qs\3")
-        buf.write("\2\2\2rm\3\2\2\2rs\3\2\2\2s\21\3\2\2\2tu\b\n\1\2uv\5\24")
-        buf.write("\13\2v|\3\2\2\2wx\f\3\2\2xy\78\2\2y{\5\24\13\2zw\3\2\2")
-        buf.write("\2{~\3\2\2\2|z\3\2\2\2|}\3\2\2\2}\23\3\2\2\2~|\3\2\2\2")
-        buf.write("\177\u0080\b\13\1\2\u0080\u0081\5\26\f\2\u0081\u0087\3")
-        buf.write("\2\2\2\u0082\u0083\f\3\2\2\u0083\u0084\7\67\2\2\u0084")
-        buf.write("\u0086\5\26\f\2\u0085\u0082\3\2\2\2\u0086\u0089\3\2\2")
-        buf.write("\2\u0087\u0085\3\2\2\2\u0087\u0088\3\2\2\2\u0088\25\3")
-        buf.write("\2\2\2\u0089\u0087\3\2\2\2\u008a\u008b\b\f\1\2\u008b\u008c")
-        buf.write("\5\30\r\2\u008c\u0092\3\2\2\2\u008d\u008e\f\3\2\2\u008e")
-        buf.write("\u008f\7\66\2\2\u008f\u0091\5\30\r\2\u0090\u008d\3\2\2")
-        buf.write("\2\u0091\u0094\3\2\2\2\u0092\u0090\3\2\2\2\u0092\u0093")
-        buf.write("\3\2\2\2\u0093\27\3\2\2\2\u0094\u0092\3\2\2\2\u0095\u009a")
-        buf.write("\5\32\16\2\u0096\u0097\79\2\2\u0097\u0099\5\32\16\2\u0098")
-        buf.write("\u0096\3\2\2\2\u0099\u009c\3\2\2\2\u009a\u0098\3\2\2\2")
-        buf.write("\u009a\u009b\3\2\2\2\u009b\31\3\2\2\2\u009c\u009a\3\2")
-        buf.write("\2\2\u009d\u009e\b\16\1\2\u009e\u009f\5\34\17\2\u009f")
-        buf.write("\u00a5\3\2\2\2\u00a0\u00a1\f\3\2\2\u00a1\u00a2\7\65\2")
-        buf.write("\2\u00a2\u00a4\5\34\17\2\u00a3\u00a0\3\2\2\2\u00a4\u00a7")
-        buf.write("\3\2\2\2\u00a5\u00a3\3\2\2\2\u00a5\u00a6\3\2\2\2\u00a6")
-        buf.write("\33\3\2\2\2\u00a7\u00a5\3\2\2\2\u00a8\u00ae\5 \21\2\u00a9")
-        buf.write("\u00aa\5\36\20\2\u00aa\u00ab\5 \21\2\u00ab\u00ad\3\2\2")
-        buf.write("\2\u00ac\u00a9\3\2\2\2\u00ad\u00b0\3\2\2\2\u00ae\u00ac")
-        buf.write("\3\2\2\2\u00ae\u00af\3\2\2\2\u00af\35\3\2\2\2\u00b0\u00ae")
-        buf.write("\3\2\2\2\u00b1\u00b2\t\3\2\2\u00b2\37\3\2\2\2\u00b3\u00b4")
-        buf.write("\b\21\1\2\u00b4\u00b5\5\"\22\2\u00b5\u00bb\3\2\2\2\u00b6")
-        buf.write("\u00b7\f\3\2\2\u00b7\u00b8\t\4\2\2\u00b8\u00ba\5\"\22")
-        buf.write("\2\u00b9\u00b6\3\2\2\2\u00ba\u00bd\3\2\2\2\u00bb\u00b9")
-        buf.write("\3\2\2\2\u00bb\u00bc\3\2\2\2\u00bc!\3\2\2\2\u00bd\u00bb")
-        buf.write("\3\2\2\2\u00be\u00bf\b\22\1\2\u00bf\u00c0\5$\23\2\u00c0")
-        buf.write("\u00c6\3\2\2\2\u00c1\u00c2\f\3\2\2\u00c2\u00c3\t\5\2\2")
-        buf.write("\u00c3\u00c5\5$\23\2\u00c4\u00c1\3\2\2\2\u00c5\u00c8\3")
-        buf.write("\2\2\2\u00c6\u00c4\3\2\2\2\u00c6\u00c7\3\2\2\2\u00c7#")
-        buf.write("\3\2\2\2\u00c8\u00c6\3\2\2\2\u00c9\u00ca\b\23\1\2\u00ca")
-        buf.write("\u00cb\5&\24\2\u00cb\u00d1\3\2\2\2\u00cc\u00cd\f\3\2\2")
-        buf.write("\u00cd\u00ce\t\6\2\2\u00ce\u00d0\5&\24\2\u00cf\u00cc\3")
-        buf.write("\2\2\2\u00d0\u00d3\3\2\2\2\u00d1\u00cf\3\2\2\2\u00d1\u00d2")
-        buf.write("\3\2\2\2\u00d2%\3\2\2\2\u00d3\u00d1\3\2\2\2\u00d4\u00d5")
-        buf.write("\7\"\2\2\u00d5\u00d6\58\35\2\u00d6\u00d7\7#\2\2\u00d7")
-        buf.write("\u00d8\5&\24\2\u00d8\u00db\3\2\2\2\u00d9\u00db\5(\25\2")
-        buf.write("\u00da\u00d4\3\2\2\2\u00da\u00d9\3\2\2\2\u00db\'\3\2\2")
-        buf.write("\2\u00dc\u00de\t\7\2\2\u00dd\u00dc\3\2\2\2\u00de\u00e1")
-        buf.write("\3\2\2\2\u00df\u00dd\3\2\2\2\u00df\u00e0\3\2\2\2\u00e0")
-        buf.write("\u00e6\3\2\2\2\u00e1\u00df\3\2\2\2\u00e2\u00e7\5,\27\2")
-        buf.write("\u00e3\u00e4\5*\26\2\u00e4\u00e5\5&\24\2\u00e5\u00e7\3")
-        buf.write("\2\2\2\u00e6\u00e2\3\2\2\2\u00e6\u00e3\3\2\2\2\u00e7)")
-        buf.write("\3\2\2\2\u00e8\u00e9\t\b\2\2\u00e9+\3\2\2\2\u00ea\u00eb")
-        buf.write("\b\27\1\2\u00eb\u00ec\5.\30\2\u00ec\u00fe\3\2\2\2\u00ed")
-        buf.write("\u00fa\f\3\2\2\u00ee\u00ef\7$\2\2\u00ef\u00f0\5\n\6\2")
-        buf.write("\u00f0\u00f1\7%\2\2\u00f1\u00fb\3\2\2\2\u00f2\u00f4\7")
-        buf.write("\"\2\2\u00f3\u00f5\5\62\32\2\u00f4\u00f3\3\2\2\2\u00f4")
-        buf.write("\u00f5\3\2\2\2\u00f5\u00f6\3\2\2\2\u00f6\u00fb\7#\2\2")
-        buf.write("\u00f7\u00f8\t\t\2\2\u00f8\u00fb\5\64\33\2\u00f9\u00fb")
-        buf.write("\t\7\2\2\u00fa\u00ee\3\2\2\2\u00fa\u00f2\3\2\2\2\u00fa")
-        buf.write("\u00f7\3\2\2\2\u00fa\u00f9\3\2\2\2\u00fb\u00fd\3\2\2\2")
-        buf.write("\u00fc\u00ed\3\2\2\2\u00fd\u0100\3\2\2\2\u00fe\u00fc\3")
-        buf.write("\2\2\2\u00fe\u00ff\3\2\2\2\u00ff-\3\2\2\2\u0100\u00fe")
-        buf.write("\3\2\2\2\u0101\u010d\5\64\33\2\u0102\u010d\7W\2\2\u0103")
-        buf.write("\u010d\7U\2\2\u0104\u010d\7V\2\2\u0105\u010d\7\37\2\2")
-        buf.write("\u0106\u010d\7 \2\2\u0107\u010d\7!\2\2\u0108\u0109\7\"")
-        buf.write("\2\2\u0109\u010a\5\n\6\2\u010a\u010b\7#\2\2\u010b\u010d")
-        buf.write("\3\2\2\2\u010c\u0101\3\2\2\2\u010c\u0102\3\2\2\2\u010c")
-        buf.write("\u0103\3\2\2\2\u010c\u0104\3\2\2\2\u010c\u0105\3\2\2\2")
-        buf.write("\u010c\u0106\3\2\2\2\u010c\u0107\3\2\2\2\u010c\u0108\3")
-        buf.write("\2\2\2\u010d/\3\2\2\2\u010e\u010f\5\20\t\2\u010f\61\3")
-        buf.write("\2\2\2\u0110\u0115\5\f\7\2\u0111\u0112\7@\2\2\u0112\u0114")
-        buf.write("\5\f\7\2\u0113\u0111\3\2\2\2\u0114\u0117\3\2\2\2\u0115")
-        buf.write("\u0113\3\2\2\2\u0115\u0116\3\2\2\2\u0116\63\3\2\2\2\u0117")
-        buf.write("\u0115\3\2\2\2\u0118\u0119\7X\2\2\u0119\65\3\2\2\2\u011a")
-        buf.write("\u011f\5\64\33\2\u011b\u011c\7O\2\2\u011c\u011e\5\64\33")
-        buf.write("\2\u011d\u011b\3\2\2\2\u011e\u0121\3\2\2\2\u011f\u011d")
-        buf.write("\3\2\2\2\u011f\u0120\3\2\2\2\u0120\67\3\2\2\2\u0121\u011f")
-        buf.write("\3\2\2\2\u0122\u0130\5\66\34\2\u0123\u0130\7\22\2\2\u0124")
-        buf.write("\u0130\7\23\2\2\u0125\u0130\7\24\2\2\u0126\u0130\7\25")
-        buf.write("\2\2\u0127\u0130\7\26\2\2\u0128\u0130\7\27\2\2\u0129\u0130")
-        buf.write("\7\30\2\2\u012a\u0130\7\31\2\2\u012b\u0130\7\32\2\2\u012c")
-        buf.write("\u0130\7\33\2\2\u012d\u0130\7\34\2\2\u012e\u0130\7\35")
-        buf.write("\2\2\u012f\u0122\3\2\2\2\u012f\u0123\3\2\2\2\u012f\u0124")
-        buf.write("\3\2\2\2\u012f\u0125\3\2\2\2\u012f\u0126\3\2\2\2\u012f")
-        buf.write("\u0127\3\2\2\2\u012f\u0128\3\2\2\2\u012f\u0129\3\2\2\2")
-        buf.write("\u012f\u012a\3\2\2\2\u012f\u012b\3\2\2\2\u012f\u012c\3")
-        buf.write("\2\2\2\u012f\u012d\3\2\2\2\u012f\u012e\3\2\2\2\u01309")
-        buf.write("\3\2\2\2\u0131\u0132\5\66\34\2\u0132\u0133\7>\2\2\u0133")
-        buf.write("\u0135\3\2\2\2\u0134\u0131\3\2\2\2\u0134\u0135\3\2\2\2")
-        buf.write("\u0135\u0136\3\2\2\2\u0136\u0137\5\64\33\2\u0137;\3\2")
-        buf.write("\2\2\36?EISZ^hr|\u0087\u0092\u009a\u00a5\u00ae\u00bb\u00c6")
-        buf.write("\u00d1\u00da\u00df\u00e6\u00f4\u00fa\u00fe\u010c\u0115")
-        buf.write("\u011f\u012f\u0134")
-        return buf.getvalue()
-
+    return [
+        4,1,87,311,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
+        2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
+        7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
+        2,27,7,27,2,28,7,28,1,0,5,0,60,8,0,10,0,12,0,63,9,0,1,0,1,0,1,1,
+        3,1,68,8,1,1,1,1,1,3,1,72,8,1,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,3,
+        3,82,8,3,1,3,1,3,1,3,1,3,1,3,3,3,89,8,3,5,3,91,8,3,10,3,12,3,94,
+        9,3,1,4,1,4,1,5,1,5,1,5,1,5,1,5,3,5,103,8,5,1,6,1,6,1,7,1,7,1,7,
+        1,7,1,7,1,7,3,7,113,8,7,1,8,1,8,1,8,1,8,1,8,1,8,5,8,121,8,8,10,8,
+        12,8,124,9,8,1,9,1,9,1,9,1,9,1,9,1,9,5,9,132,8,9,10,9,12,9,135,9,
+        9,1,10,1,10,1,10,1,10,1,10,1,10,5,10,143,8,10,10,10,12,10,146,9,
+        10,1,11,1,11,1,11,5,11,151,8,11,10,11,12,11,154,9,11,1,12,1,12,1,
+        12,1,12,1,12,1,12,5,12,162,8,12,10,12,12,12,165,9,12,1,13,1,13,1,
+        13,1,13,5,13,171,8,13,10,13,12,13,174,9,13,1,14,1,14,1,15,1,15,1,
+        15,1,15,1,15,1,15,5,15,184,8,15,10,15,12,15,187,9,15,1,16,1,16,1,
+        16,1,16,1,16,1,16,5,16,195,8,16,10,16,12,16,198,9,16,1,17,1,17,1,
+        17,1,17,1,17,1,17,5,17,206,8,17,10,17,12,17,209,9,17,1,18,1,18,1,
+        18,1,18,1,18,1,18,3,18,217,8,18,1,19,5,19,220,8,19,10,19,12,19,223,
+        9,19,1,19,1,19,1,19,1,19,3,19,229,8,19,1,20,1,20,1,21,1,21,1,21,
+        1,21,1,21,1,21,1,21,1,21,1,21,1,21,3,21,243,8,21,1,21,1,21,1,21,
+        1,21,3,21,249,8,21,5,21,251,8,21,10,21,12,21,254,9,21,1,22,1,22,
+        1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,3,22,267,8,22,1,23,
+        1,23,1,24,1,24,1,24,5,24,274,8,24,10,24,12,24,277,9,24,1,25,1,25,
+        1,26,1,26,1,26,5,26,284,8,26,10,26,12,26,287,9,26,1,27,1,27,1,27,
+        1,27,1,27,1,27,1,27,1,27,1,27,1,27,1,27,1,27,1,27,3,27,302,8,27,
+        1,28,1,28,1,28,3,28,307,8,28,1,28,1,28,1,28,0,9,6,16,18,20,24,30,
+        32,34,42,29,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,
+        38,40,42,44,46,48,50,52,54,56,0,8,1,0,65,75,2,0,40,43,76,77,1,0,
+        44,45,2,0,46,46,48,48,1,0,50,52,2,0,47,47,49,49,5,0,46,46,48,48,
+        50,50,53,53,58,59,1,0,78,79,328,0,61,1,0,0,0,2,71,1,0,0,0,4,73,1,
+        0,0,0,6,76,1,0,0,0,8,95,1,0,0,0,10,102,1,0,0,0,12,104,1,0,0,0,14,
+        106,1,0,0,0,16,114,1,0,0,0,18,125,1,0,0,0,20,136,1,0,0,0,22,147,
+        1,0,0,0,24,155,1,0,0,0,26,166,1,0,0,0,28,175,1,0,0,0,30,177,1,0,
+        0,0,32,188,1,0,0,0,34,199,1,0,0,0,36,216,1,0,0,0,38,221,1,0,0,0,
+        40,230,1,0,0,0,42,232,1,0,0,0,44,266,1,0,0,0,46,268,1,0,0,0,48,270,
+        1,0,0,0,50,278,1,0,0,0,52,280,1,0,0,0,54,301,1,0,0,0,56,306,1,0,
+        0,0,58,60,3,2,1,0,59,58,1,0,0,0,60,63,1,0,0,0,61,59,1,0,0,0,61,62,
+        1,0,0,0,62,64,1,0,0,0,63,61,1,0,0,0,64,65,5,0,0,1,65,1,1,0,0,0,66,
+        68,3,8,4,0,67,66,1,0,0,0,67,68,1,0,0,0,68,69,1,0,0,0,69,72,5,81,
+        0,0,70,72,3,4,2,0,71,67,1,0,0,0,71,70,1,0,0,0,72,3,1,0,0,0,73,74,
+        3,6,3,0,74,75,5,81,0,0,75,5,1,0,0,0,76,77,6,3,-1,0,77,78,3,54,27,
+        0,78,81,3,50,25,0,79,80,5,65,0,0,80,82,3,8,4,0,81,79,1,0,0,0,81,
+        82,1,0,0,0,82,92,1,0,0,0,83,84,10,1,0,0,84,85,5,64,0,0,85,88,3,50,
+        25,0,86,87,5,65,0,0,87,89,3,8,4,0,88,86,1,0,0,0,88,89,1,0,0,0,89,
+        91,1,0,0,0,90,83,1,0,0,0,91,94,1,0,0,0,92,90,1,0,0,0,92,93,1,0,0,
+        0,93,7,1,0,0,0,94,92,1,0,0,0,95,96,3,10,5,0,96,9,1,0,0,0,97,103,
+        3,14,7,0,98,99,3,38,19,0,99,100,3,12,6,0,100,101,3,10,5,0,101,103,
+        1,0,0,0,102,97,1,0,0,0,102,98,1,0,0,0,103,11,1,0,0,0,104,105,7,0,
+        0,0,105,13,1,0,0,0,106,112,3,16,8,0,107,108,5,60,0,0,108,109,3,8,
+        4,0,109,110,5,61,0,0,110,111,3,14,7,0,111,113,1,0,0,0,112,107,1,
+        0,0,0,112,113,1,0,0,0,113,15,1,0,0,0,114,115,6,8,-1,0,115,116,3,
+        18,9,0,116,122,1,0,0,0,117,118,10,1,0,0,118,119,5,56,0,0,119,121,
+        3,18,9,0,120,117,1,0,0,0,121,124,1,0,0,0,122,120,1,0,0,0,122,123,
+        1,0,0,0,123,17,1,0,0,0,124,122,1,0,0,0,125,126,6,9,-1,0,126,127,
+        3,20,10,0,127,133,1,0,0,0,128,129,10,1,0,0,129,130,5,55,0,0,130,
+        132,3,20,10,0,131,128,1,0,0,0,132,135,1,0,0,0,133,131,1,0,0,0,133,
+        134,1,0,0,0,134,19,1,0,0,0,135,133,1,0,0,0,136,137,6,10,-1,0,137,
+        138,3,22,11,0,138,144,1,0,0,0,139,140,10,1,0,0,140,141,5,54,0,0,
+        141,143,3,22,11,0,142,139,1,0,0,0,143,146,1,0,0,0,144,142,1,0,0,
+        0,144,145,1,0,0,0,145,21,1,0,0,0,146,144,1,0,0,0,147,152,3,24,12,
+        0,148,149,5,57,0,0,149,151,3,24,12,0,150,148,1,0,0,0,151,154,1,0,
+        0,0,152,150,1,0,0,0,152,153,1,0,0,0,153,23,1,0,0,0,154,152,1,0,0,
+        0,155,156,6,12,-1,0,156,157,3,26,13,0,157,163,1,0,0,0,158,159,10,
+        1,0,0,159,160,5,53,0,0,160,162,3,26,13,0,161,158,1,0,0,0,162,165,
+        1,0,0,0,163,161,1,0,0,0,163,164,1,0,0,0,164,25,1,0,0,0,165,163,1,
+        0,0,0,166,172,3,30,15,0,167,168,3,28,14,0,168,169,3,30,15,0,169,
+        171,1,0,0,0,170,167,1,0,0,0,171,174,1,0,0,0,172,170,1,0,0,0,172,
+        173,1,0,0,0,173,27,1,0,0,0,174,172,1,0,0,0,175,176,7,1,0,0,176,29,
+        1,0,0,0,177,178,6,15,-1,0,178,179,3,32,16,0,179,185,1,0,0,0,180,
+        181,10,1,0,0,181,182,7,2,0,0,182,184,3,32,16,0,183,180,1,0,0,0,184,
+        187,1,0,0,0,185,183,1,0,0,0,185,186,1,0,0,0,186,31,1,0,0,0,187,185,
+        1,0,0,0,188,189,6,16,-1,0,189,190,3,34,17,0,190,196,1,0,0,0,191,
+        192,10,1,0,0,192,193,7,3,0,0,193,195,3,34,17,0,194,191,1,0,0,0,195,
+        198,1,0,0,0,196,194,1,0,0,0,196,197,1,0,0,0,197,33,1,0,0,0,198,196,
+        1,0,0,0,199,200,6,17,-1,0,200,201,3,36,18,0,201,207,1,0,0,0,202,
+        203,10,1,0,0,203,204,7,4,0,0,204,206,3,36,18,0,205,202,1,0,0,0,206,
+        209,1,0,0,0,207,205,1,0,0,0,207,208,1,0,0,0,208,35,1,0,0,0,209,207,
+        1,0,0,0,210,211,5,34,0,0,211,212,3,54,27,0,212,213,5,35,0,0,213,
+        214,3,36,18,0,214,217,1,0,0,0,215,217,3,38,19,0,216,210,1,0,0,0,
+        216,215,1,0,0,0,217,37,1,0,0,0,218,220,7,5,0,0,219,218,1,0,0,0,220,
+        223,1,0,0,0,221,219,1,0,0,0,221,222,1,0,0,0,222,228,1,0,0,0,223,
+        221,1,0,0,0,224,229,3,42,21,0,225,226,3,40,20,0,226,227,3,36,18,
+        0,227,229,1,0,0,0,228,224,1,0,0,0,228,225,1,0,0,0,229,39,1,0,0,0,
+        230,231,7,6,0,0,231,41,1,0,0,0,232,233,6,21,-1,0,233,234,3,44,22,
+        0,234,252,1,0,0,0,235,248,10,1,0,0,236,237,5,36,0,0,237,238,3,8,
+        4,0,238,239,5,37,0,0,239,249,1,0,0,0,240,242,5,34,0,0,241,243,3,
+        48,24,0,242,241,1,0,0,0,242,243,1,0,0,0,243,244,1,0,0,0,244,249,
+        5,35,0,0,245,246,7,7,0,0,246,249,3,50,25,0,247,249,7,5,0,0,248,236,
+        1,0,0,0,248,240,1,0,0,0,248,245,1,0,0,0,248,247,1,0,0,0,249,251,
+        1,0,0,0,250,235,1,0,0,0,251,254,1,0,0,0,252,250,1,0,0,0,252,253,
+        1,0,0,0,253,43,1,0,0,0,254,252,1,0,0,0,255,267,3,50,25,0,256,267,
+        5,86,0,0,257,267,5,84,0,0,258,267,5,85,0,0,259,267,5,31,0,0,260,
+        267,5,32,0,0,261,267,5,33,0,0,262,263,5,34,0,0,263,264,3,8,4,0,264,
+        265,5,35,0,0,265,267,1,0,0,0,266,255,1,0,0,0,266,256,1,0,0,0,266,
+        257,1,0,0,0,266,258,1,0,0,0,266,259,1,0,0,0,266,260,1,0,0,0,266,
+        261,1,0,0,0,266,262,1,0,0,0,267,45,1,0,0,0,268,269,3,14,7,0,269,
+        47,1,0,0,0,270,275,3,10,5,0,271,272,5,64,0,0,272,274,3,10,5,0,273,
+        271,1,0,0,0,274,277,1,0,0,0,275,273,1,0,0,0,275,276,1,0,0,0,276,
+        49,1,0,0,0,277,275,1,0,0,0,278,279,5,87,0,0,279,51,1,0,0,0,280,285,
+        3,50,25,0,281,282,5,79,0,0,282,284,3,50,25,0,283,281,1,0,0,0,284,
+        287,1,0,0,0,285,283,1,0,0,0,285,286,1,0,0,0,286,53,1,0,0,0,287,285,
+        1,0,0,0,288,302,3,52,26,0,289,302,5,18,0,0,290,302,5,19,0,0,291,
+        302,5,20,0,0,292,302,5,21,0,0,293,302,5,22,0,0,294,302,5,23,0,0,
+        295,302,5,24,0,0,296,302,5,25,0,0,297,302,5,26,0,0,298,302,5,27,
+        0,0,299,302,5,28,0,0,300,302,5,29,0,0,301,288,1,0,0,0,301,289,1,
+        0,0,0,301,290,1,0,0,0,301,291,1,0,0,0,301,292,1,0,0,0,301,293,1,
+        0,0,0,301,294,1,0,0,0,301,295,1,0,0,0,301,296,1,0,0,0,301,297,1,
+        0,0,0,301,298,1,0,0,0,301,299,1,0,0,0,301,300,1,0,0,0,302,55,1,0,
+        0,0,303,304,3,52,26,0,304,305,5,62,0,0,305,307,1,0,0,0,306,303,1,
+        0,0,0,306,307,1,0,0,0,307,308,1,0,0,0,308,309,3,50,25,0,309,57,1,
+        0,0,0,28,61,67,71,81,88,92,102,112,122,133,144,152,163,172,185,196,
+        207,216,221,228,242,248,252,266,275,285,301,306
+    ]
 
 class DaoParser ( Parser ):
 
@@ -166,40 +134,41 @@ class DaoParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'\u5BFC\u5165'", "'\u51FD\u6570'", "'\u7C7B'", 
-                     "'\u7ED3\u6784\u4F53'", "'\u5171\u7528\u4F53'", "'\u679A\u4E3E'", 
-                     "'\u5982\u679C'", "'\u6216\u8005'", "'\u5426\u5219'", 
-                     "'\u5F53'", "'\u5BF9\u4E8E'", "'\u8FD4\u56DE'", "'\u8DF3\u8FC7'", 
-                     "'\u8DF3\u51FA'", "'\u8DF3\u5230'", "'\u5B57\u8282'", 
-                     "'\u77ED\u6574\u6570'", "'\u6574\u6570'", "'\u957F\u6574\u6570'", 
-                     "'\u77ED\u6B63\u6574\u6570'", "'\u6B63\u6574\u6570'", 
-                     "'\u957F\u6B63\u6574\u6570'", "'\u77ED\u5C0F\u6570'", 
-                     "'\u5C0F\u6570'", "'\u957F\u5C0F\u6570'", "'\u903B\u8F91'", 
-                     "'\u6587\u672C'", "'\u5B57\u7B26'", "'\u771F'", "'\u5047'", 
-                     "'\u7A7A'", "'('", "')'", "'['", "']'", "'{'", "'}'", 
-                     "'<'", "'<='", "'>'", "'>='", "'<<'", "'>>'", "'+'", 
-                     "'++'", "'-'", "'--'", "'*'", "'/'", "'%'", "'&'", 
-                     "'|'", "'&&'", "'||'", "'^'", "'!'", "'~'", "'?'", 
-                     "':'", "'::'", "';'", "','", "'='", "'*='", "'/='", 
-                     "'%='", "'+='", "'-='", "'<<='", "'>>='", "'&='", "'^='", 
-                     "'|='", "'=='", "'!='", "'->'", "'.'", "'...'" ]
+    literalNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "'\\u5BFC\\u5165'", 
+                     "'\\u51FD\\u6570'", "'\\u7C7B'", "'\\u7ED3\\u6784\\u4F53'", 
+                     "'\\u5171\\u7528\\u4F53'", "'\\u679A\\u4E3E'", "'\\u5982\\u679C'", 
+                     "'\\u6216\\u8005'", "'\\u5426\\u5219'", "'\\u5F53'", 
+                     "'\\u5BF9\\u4E8E'", "'\\u8FD4\\u56DE'", "'\\u8DF3\\u8FC7'", 
+                     "'\\u8DF3\\u51FA'", "'\\u8DF3\\u5230'", "'\\u5B57\\u8282'", 
+                     "'\\u77ED\\u6574\\u6570'", "'\\u6574\\u6570'", "'\\u957F\\u6574\\u6570'", 
+                     "'\\u77ED\\u6B63\\u6574\\u6570'", "'\\u6B63\\u6574\\u6570'", 
+                     "'\\u957F\\u6B63\\u6574\\u6570'", "'\\u77ED\\u5C0F\\u6570'", 
+                     "'\\u5C0F\\u6570'", "'\\u957F\\u5C0F\\u6570'", "'\\u903B\\u8F91'", 
+                     "'\\u6587\\u672C'", "'\\u5B57\\u7B26'", "'\\u771F'", 
+                     "'\\u5047'", "'\\u7A7A'", "'('", "')'", "'['", "']'", 
+                     "'{'", "'}'", "'<'", "'<='", "'>'", "'>='", "'<<'", 
+                     "'>>'", "'+'", "'++'", "'-'", "'--'", "'*'", "'/'", 
+                     "'%'", "'&'", "'|'", "'&&'", "'||'", "'^'", "'!'", 
+                     "'~'", "'?'", "':'", "'::'", "';'", "','", "'='", "'*='", 
+                     "'/='", "'%='", "'+='", "'-='", "'<<='", "'>>='", "'&='", 
+                     "'^='", "'|='", "'=='", "'!='", "'->'", "'.'", "'...'" ]
 
-    symbolicNames = [ "<INVALID>", "Import", "Func", "Class", "Struct", 
-                      "Union", "Enum", "If", "ElseIf", "Else", "While", 
-                      "For", "Return", "Continue", "Break", "Goto", "Byte", 
-                      "Int16", "Int32", "Int64", "UInt16", "UInt32", "UInt64", 
-                      "Half", "Float", "Double", "Bool", "Text", "Char", 
-                      "TrueLiteral", "FalseLiteral", "NullLiteral", "LeftParen", 
-                      "RightParen", "LeftBracket", "RightBracket", "LeftBrace", 
-                      "RightBrace", "Less", "LessEqual", "Greater", "GreaterEqual", 
-                      "LeftShift", "RightShift", "Plus", "PlusPlus", "Minus", 
-                      "MinusMinus", "Star", "Div", "Mod", "And", "Or", "AndAnd", 
-                      "OrOr", "Caret", "Not", "Tilde", "Question", "Colon", 
-                      "ColonColon", "Semi", "Comma", "Assign", "StarAssign", 
-                      "DivAssign", "ModAssign", "PlusAssign", "MinusAssign", 
-                      "LeftShiftAssign", "RightShiftAssign", "AndAssign", 
-                      "XorAssign", "OrAssign", "Equal", "NotEqual", "Arrow", 
-                      "Dot", "Ellipsis", "Whitespace", "Newline", "BlockComment", 
+    symbolicNames = [ "<INVALID>", "INDENT", "DEDENT", "Import", "Func", 
+                      "Class", "Struct", "Union", "Enum", "If", "ElseIf", 
+                      "Else", "While", "For", "Return", "Continue", "Break", 
+                      "Goto", "Byte", "Int16", "Int32", "Int64", "UInt16", 
+                      "UInt32", "UInt64", "Half", "Float", "Double", "Bool", 
+                      "Text", "Char", "TrueLiteral", "FalseLiteral", "NullLiteral", 
+                      "LeftParen", "RightParen", "LeftBracket", "RightBracket", 
+                      "LeftBrace", "RightBrace", "Less", "LessEqual", "Greater", 
+                      "GreaterEqual", "LeftShift", "RightShift", "Plus", 
+                      "PlusPlus", "Minus", "MinusMinus", "Star", "Div", 
+                      "Mod", "And", "Or", "AndAnd", "OrOr", "Caret", "Not", 
+                      "Tilde", "Question", "Colon", "ColonColon", "Semi", 
+                      "Comma", "Assign", "StarAssign", "DivAssign", "ModAssign", 
+                      "PlusAssign", "MinusAssign", "LeftShiftAssign", "RightShiftAssign", 
+                      "AndAssign", "XorAssign", "OrAssign", "Equal", "NotEqual", 
+                      "Arrow", "Dot", "Ellipsis", "Newline", "BlockComment", 
                       "LineComment", "IntegerLiteral", "FloatLiteral", "StringLiteral", 
                       "Identifier" ]
 
@@ -244,96 +213,97 @@ class DaoParser ( Parser ):
                    "identifier", "dotName", "typeName", "funcName" ]
 
     EOF = Token.EOF
-    Import=1
-    Func=2
-    Class=3
-    Struct=4
-    Union=5
-    Enum=6
-    If=7
-    ElseIf=8
-    Else=9
-    While=10
-    For=11
-    Return=12
-    Continue=13
-    Break=14
-    Goto=15
-    Byte=16
-    Int16=17
-    Int32=18
-    Int64=19
-    UInt16=20
-    UInt32=21
-    UInt64=22
-    Half=23
-    Float=24
-    Double=25
-    Bool=26
-    Text=27
-    Char=28
-    TrueLiteral=29
-    FalseLiteral=30
-    NullLiteral=31
-    LeftParen=32
-    RightParen=33
-    LeftBracket=34
-    RightBracket=35
-    LeftBrace=36
-    RightBrace=37
-    Less=38
-    LessEqual=39
-    Greater=40
-    GreaterEqual=41
-    LeftShift=42
-    RightShift=43
-    Plus=44
-    PlusPlus=45
-    Minus=46
-    MinusMinus=47
-    Star=48
-    Div=49
-    Mod=50
-    And=51
-    Or=52
-    AndAnd=53
-    OrOr=54
-    Caret=55
-    Not=56
-    Tilde=57
-    Question=58
-    Colon=59
-    ColonColon=60
-    Semi=61
-    Comma=62
-    Assign=63
-    StarAssign=64
-    DivAssign=65
-    ModAssign=66
-    PlusAssign=67
-    MinusAssign=68
-    LeftShiftAssign=69
-    RightShiftAssign=70
-    AndAssign=71
-    XorAssign=72
-    OrAssign=73
-    Equal=74
-    NotEqual=75
-    Arrow=76
-    Dot=77
-    Ellipsis=78
-    Whitespace=79
-    Newline=80
-    BlockComment=81
-    LineComment=82
-    IntegerLiteral=83
-    FloatLiteral=84
-    StringLiteral=85
-    Identifier=86
+    INDENT=1
+    DEDENT=2
+    Import=3
+    Func=4
+    Class=5
+    Struct=6
+    Union=7
+    Enum=8
+    If=9
+    ElseIf=10
+    Else=11
+    While=12
+    For=13
+    Return=14
+    Continue=15
+    Break=16
+    Goto=17
+    Byte=18
+    Int16=19
+    Int32=20
+    Int64=21
+    UInt16=22
+    UInt32=23
+    UInt64=24
+    Half=25
+    Float=26
+    Double=27
+    Bool=28
+    Text=29
+    Char=30
+    TrueLiteral=31
+    FalseLiteral=32
+    NullLiteral=33
+    LeftParen=34
+    RightParen=35
+    LeftBracket=36
+    RightBracket=37
+    LeftBrace=38
+    RightBrace=39
+    Less=40
+    LessEqual=41
+    Greater=42
+    GreaterEqual=43
+    LeftShift=44
+    RightShift=45
+    Plus=46
+    PlusPlus=47
+    Minus=48
+    MinusMinus=49
+    Star=50
+    Div=51
+    Mod=52
+    And=53
+    Or=54
+    AndAnd=55
+    OrOr=56
+    Caret=57
+    Not=58
+    Tilde=59
+    Question=60
+    Colon=61
+    ColonColon=62
+    Semi=63
+    Comma=64
+    Assign=65
+    StarAssign=66
+    DivAssign=67
+    ModAssign=68
+    PlusAssign=69
+    MinusAssign=70
+    LeftShiftAssign=71
+    RightShiftAssign=72
+    AndAssign=73
+    XorAssign=74
+    OrAssign=75
+    Equal=76
+    NotEqual=77
+    Arrow=78
+    Dot=79
+    Ellipsis=80
+    Newline=81
+    BlockComment=82
+    LineComment=83
+    IntegerLiteral=84
+    FloatLiteral=85
+    StringLiteral=86
+    Identifier=87
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9.3")
+        self.checkVersion("4.11.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -379,7 +349,7 @@ class DaoParser ( Parser ):
             self.state = 61
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << DaoParser.Byte) | (1 << DaoParser.Int16) | (1 << DaoParser.Int32) | (1 << DaoParser.Int64) | (1 << DaoParser.UInt16) | (1 << DaoParser.UInt32) | (1 << DaoParser.UInt64) | (1 << DaoParser.Half) | (1 << DaoParser.Float) | (1 << DaoParser.Double) | (1 << DaoParser.Bool) | (1 << DaoParser.Text) | (1 << DaoParser.TrueLiteral) | (1 << DaoParser.FalseLiteral) | (1 << DaoParser.NullLiteral) | (1 << DaoParser.LeftParen) | (1 << DaoParser.Plus) | (1 << DaoParser.PlusPlus) | (1 << DaoParser.Minus) | (1 << DaoParser.MinusMinus) | (1 << DaoParser.Star) | (1 << DaoParser.And) | (1 << DaoParser.Not) | (1 << DaoParser.Tilde))) != 0) or ((((_la - 80)) & ~0x3f) == 0 and ((1 << (_la - 80)) & ((1 << (DaoParser.Newline - 80)) | (1 << (DaoParser.IntegerLiteral - 80)) | (1 << (DaoParser.FloatLiteral - 80)) | (1 << (DaoParser.StringLiteral - 80)) | (1 << (DaoParser.Identifier - 80)))) != 0):
+            while ((_la) & ~0x3f) == 0 and ((1 << _la) & 875879792065118208) != 0 or (((_la - 81)) & ~0x3f) == 0 and ((1 << (_la - 81)) & 121) != 0:
                 self.state = 58
                 self.statement()
                 self.state = 63
@@ -441,7 +411,7 @@ class DaoParser ( Parser ):
                 self.state = 67
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((((_la - 29)) & ~0x3f) == 0 and ((1 << (_la - 29)) & ((1 << (DaoParser.TrueLiteral - 29)) | (1 << (DaoParser.FalseLiteral - 29)) | (1 << (DaoParser.NullLiteral - 29)) | (1 << (DaoParser.LeftParen - 29)) | (1 << (DaoParser.Plus - 29)) | (1 << (DaoParser.PlusPlus - 29)) | (1 << (DaoParser.Minus - 29)) | (1 << (DaoParser.MinusMinus - 29)) | (1 << (DaoParser.Star - 29)) | (1 << (DaoParser.And - 29)) | (1 << (DaoParser.Not - 29)) | (1 << (DaoParser.Tilde - 29)) | (1 << (DaoParser.IntegerLiteral - 29)) | (1 << (DaoParser.FloatLiteral - 29)) | (1 << (DaoParser.StringLiteral - 29)) | (1 << (DaoParser.Identifier - 29)))) != 0):
+                if (((_la - 31)) & ~0x3f) == 0 and ((1 << (_la - 31)) & 135107989228978191) != 0:
                     self.state = 66
                     self.expression()
 
@@ -786,7 +756,7 @@ class DaoParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 104
             _la = self._input.LA(1)
-            if not(((((_la - 63)) & ~0x3f) == 0 and ((1 << (_la - 63)) & ((1 << (DaoParser.Assign - 63)) | (1 << (DaoParser.StarAssign - 63)) | (1 << (DaoParser.DivAssign - 63)) | (1 << (DaoParser.ModAssign - 63)) | (1 << (DaoParser.PlusAssign - 63)) | (1 << (DaoParser.MinusAssign - 63)) | (1 << (DaoParser.LeftShiftAssign - 63)) | (1 << (DaoParser.RightShiftAssign - 63)) | (1 << (DaoParser.AndAssign - 63)) | (1 << (DaoParser.XorAssign - 63)) | (1 << (DaoParser.OrAssign - 63)))) != 0)):
+            if not((((_la - 65)) & ~0x3f) == 0 and ((1 << (_la - 65)) & 2047) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1327,7 +1297,7 @@ class DaoParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 175
             _la = self._input.LA(1)
-            if not(((((_la - 38)) & ~0x3f) == 0 and ((1 << (_la - 38)) & ((1 << (DaoParser.Less - 38)) | (1 << (DaoParser.LessEqual - 38)) | (1 << (DaoParser.Greater - 38)) | (1 << (DaoParser.GreaterEqual - 38)) | (1 << (DaoParser.Equal - 38)) | (1 << (DaoParser.NotEqual - 38)))) != 0)):
+            if not((((_la - 40)) & ~0x3f) == 0 and ((1 << (_la - 40)) & 206158430223) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1404,7 +1374,7 @@ class DaoParser ( Parser ):
                     self.state = 181
                     localctx.op = self._input.LT(1)
                     _la = self._input.LA(1)
-                    if not(_la==DaoParser.LeftShift or _la==DaoParser.RightShift):
+                    if not(_la==44 or _la==45):
                         localctx.op = self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
@@ -1487,7 +1457,7 @@ class DaoParser ( Parser ):
                     self.state = 192
                     localctx.op = self._input.LT(1)
                     _la = self._input.LA(1)
-                    if not(_la==DaoParser.Plus or _la==DaoParser.Minus):
+                    if not(_la==46 or _la==48):
                         localctx.op = self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
@@ -1573,7 +1543,7 @@ class DaoParser ( Parser ):
                     self.state = 203
                     localctx.op = self._input.LT(1)
                     _la = self._input.LA(1)
-                    if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << DaoParser.Star) | (1 << DaoParser.Div) | (1 << DaoParser.Mod))) != 0)):
+                    if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 7881299347898368) != 0):
                         localctx.op = self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
@@ -1719,10 +1689,10 @@ class DaoParser ( Parser ):
             self.state = 221
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==DaoParser.PlusPlus or _la==DaoParser.MinusMinus:
+            while _la==47 or _la==49:
                 self.state = 218
                 _la = self._input.LA(1)
-                if not(_la==DaoParser.PlusPlus or _la==DaoParser.MinusMinus):
+                if not(_la==47 or _la==49):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -1734,11 +1704,11 @@ class DaoParser ( Parser ):
             self.state = 228
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [DaoParser.TrueLiteral, DaoParser.FalseLiteral, DaoParser.NullLiteral, DaoParser.LeftParen, DaoParser.IntegerLiteral, DaoParser.FloatLiteral, DaoParser.StringLiteral, DaoParser.Identifier]:
+            if token in [31, 32, 33, 34, 84, 85, 86, 87]:
                 self.state = 224
                 self.postfixExpression(0)
                 pass
-            elif token in [DaoParser.Plus, DaoParser.Minus, DaoParser.Star, DaoParser.And, DaoParser.Not, DaoParser.Tilde]:
+            elif token in [46, 48, 50, 53, 58, 59]:
                 self.state = 225
                 self.unaryOperator()
                 self.state = 226
@@ -1802,7 +1772,7 @@ class DaoParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 230
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << DaoParser.Plus) | (1 << DaoParser.Minus) | (1 << DaoParser.Star) | (1 << DaoParser.And) | (1 << DaoParser.Not) | (1 << DaoParser.Tilde))) != 0)):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 875176071337607168) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1908,7 +1878,7 @@ class DaoParser ( Parser ):
                     self.state = 248
                     self._errHandler.sync(self)
                     token = self._input.LA(1)
-                    if token in [DaoParser.LeftBracket]:
+                    if token in [36]:
                         self.state = 236
                         self.match(DaoParser.LeftBracket)
                         self.state = 237
@@ -1916,13 +1886,13 @@ class DaoParser ( Parser ):
                         self.state = 238
                         self.match(DaoParser.RightBracket)
                         pass
-                    elif token in [DaoParser.LeftParen]:
+                    elif token in [34]:
                         self.state = 240
                         self.match(DaoParser.LeftParen)
                         self.state = 242
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if ((((_la - 29)) & ~0x3f) == 0 and ((1 << (_la - 29)) & ((1 << (DaoParser.TrueLiteral - 29)) | (1 << (DaoParser.FalseLiteral - 29)) | (1 << (DaoParser.NullLiteral - 29)) | (1 << (DaoParser.LeftParen - 29)) | (1 << (DaoParser.Plus - 29)) | (1 << (DaoParser.PlusPlus - 29)) | (1 << (DaoParser.Minus - 29)) | (1 << (DaoParser.MinusMinus - 29)) | (1 << (DaoParser.Star - 29)) | (1 << (DaoParser.And - 29)) | (1 << (DaoParser.Not - 29)) | (1 << (DaoParser.Tilde - 29)) | (1 << (DaoParser.IntegerLiteral - 29)) | (1 << (DaoParser.FloatLiteral - 29)) | (1 << (DaoParser.StringLiteral - 29)) | (1 << (DaoParser.Identifier - 29)))) != 0):
+                        if (((_la - 31)) & ~0x3f) == 0 and ((1 << (_la - 31)) & 135107989228978191) != 0:
                             self.state = 241
                             self.argumentExpressionList()
 
@@ -1930,10 +1900,10 @@ class DaoParser ( Parser ):
                         self.state = 244
                         self.match(DaoParser.RightParen)
                         pass
-                    elif token in [DaoParser.Arrow, DaoParser.Dot]:
+                    elif token in [78, 79]:
                         self.state = 245
                         _la = self._input.LA(1)
-                        if not(_la==DaoParser.Arrow or _la==DaoParser.Dot):
+                        if not(_la==78 or _la==79):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -1941,10 +1911,10 @@ class DaoParser ( Parser ):
                         self.state = 246
                         self.identifier()
                         pass
-                    elif token in [DaoParser.PlusPlus, DaoParser.MinusMinus]:
+                    elif token in [47, 49]:
                         self.state = 247
                         _la = self._input.LA(1)
-                        if not(_la==DaoParser.PlusPlus or _la==DaoParser.MinusMinus):
+                        if not(_la==47 or _la==49):
                             self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -2025,42 +1995,42 @@ class DaoParser ( Parser ):
             self.state = 266
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [DaoParser.Identifier]:
+            if token in [87]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 255
                 self.identifier()
                 pass
-            elif token in [DaoParser.StringLiteral]:
+            elif token in [86]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 256
                 self.match(DaoParser.StringLiteral)
                 pass
-            elif token in [DaoParser.IntegerLiteral]:
+            elif token in [84]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 257
                 self.match(DaoParser.IntegerLiteral)
                 pass
-            elif token in [DaoParser.FloatLiteral]:
+            elif token in [85]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 258
                 self.match(DaoParser.FloatLiteral)
                 pass
-            elif token in [DaoParser.TrueLiteral]:
+            elif token in [31]:
                 self.enterOuterAlt(localctx, 5)
                 self.state = 259
                 self.match(DaoParser.TrueLiteral)
                 pass
-            elif token in [DaoParser.FalseLiteral]:
+            elif token in [32]:
                 self.enterOuterAlt(localctx, 6)
                 self.state = 260
                 self.match(DaoParser.FalseLiteral)
                 pass
-            elif token in [DaoParser.NullLiteral]:
+            elif token in [33]:
                 self.enterOuterAlt(localctx, 7)
                 self.state = 261
                 self.match(DaoParser.NullLiteral)
                 pass
-            elif token in [DaoParser.LeftParen]:
+            elif token in [34]:
                 self.enterOuterAlt(localctx, 8)
                 self.state = 262
                 self.match(DaoParser.LeftParen)
@@ -2165,7 +2135,7 @@ class DaoParser ( Parser ):
             self.state = 275
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==DaoParser.Comma:
+            while _la==64:
                 self.state = 271
                 self.match(DaoParser.Comma)
                 self.state = 272
@@ -2266,7 +2236,7 @@ class DaoParser ( Parser ):
             self.state = 285
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==DaoParser.Dot:
+            while _la==79:
                 self.state = 281
                 self.match(DaoParser.Dot)
                 self.state = 282
@@ -2351,67 +2321,67 @@ class DaoParser ( Parser ):
             self.state = 301
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [DaoParser.Identifier]:
+            if token in [87]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 288
                 self.dotName()
                 pass
-            elif token in [DaoParser.Byte]:
+            elif token in [18]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 289
                 self.match(DaoParser.Byte)
                 pass
-            elif token in [DaoParser.Int16]:
+            elif token in [19]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 290
                 self.match(DaoParser.Int16)
                 pass
-            elif token in [DaoParser.Int32]:
+            elif token in [20]:
                 self.enterOuterAlt(localctx, 4)
                 self.state = 291
                 self.match(DaoParser.Int32)
                 pass
-            elif token in [DaoParser.Int64]:
+            elif token in [21]:
                 self.enterOuterAlt(localctx, 5)
                 self.state = 292
                 self.match(DaoParser.Int64)
                 pass
-            elif token in [DaoParser.UInt16]:
+            elif token in [22]:
                 self.enterOuterAlt(localctx, 6)
                 self.state = 293
                 self.match(DaoParser.UInt16)
                 pass
-            elif token in [DaoParser.UInt32]:
+            elif token in [23]:
                 self.enterOuterAlt(localctx, 7)
                 self.state = 294
                 self.match(DaoParser.UInt32)
                 pass
-            elif token in [DaoParser.UInt64]:
+            elif token in [24]:
                 self.enterOuterAlt(localctx, 8)
                 self.state = 295
                 self.match(DaoParser.UInt64)
                 pass
-            elif token in [DaoParser.Half]:
+            elif token in [25]:
                 self.enterOuterAlt(localctx, 9)
                 self.state = 296
                 self.match(DaoParser.Half)
                 pass
-            elif token in [DaoParser.Float]:
+            elif token in [26]:
                 self.enterOuterAlt(localctx, 10)
                 self.state = 297
                 self.match(DaoParser.Float)
                 pass
-            elif token in [DaoParser.Double]:
+            elif token in [27]:
                 self.enterOuterAlt(localctx, 11)
                 self.state = 298
                 self.match(DaoParser.Double)
                 pass
-            elif token in [DaoParser.Bool]:
+            elif token in [28]:
                 self.enterOuterAlt(localctx, 12)
                 self.state = 299
                 self.match(DaoParser.Bool)
                 pass
-            elif token in [DaoParser.Text]:
+            elif token in [29]:
                 self.enterOuterAlt(localctx, 13)
                 self.state = 300
                 self.match(DaoParser.Text)

@@ -1,14 +1,15 @@
 import sys
+from antlr4 import *
 
-from dao.lexer import Lexer
+from dao.generated.DaoLexer import DaoLexer
 
 
 def main():
     if len(sys.argv) == 1:
-        print("gcc: fatal error: no input files")
+        print("dao: fatal error: no input files")
     else:
-        lexer = Lexer(sys.argv[1])
         src_file = sys.argv[1]
+        lexer = DaoLexer(FileStream(src_file, encoding="utf8"))
         print(src_file)
 
 
